@@ -1,0 +1,10 @@
+<h3>{{question}}</h3>
+<div class="layou-row">
+  {{paper-input value=response onChange=(action (mut response))}}
+  {{#if extra}}
+    {{extra}}
+  {{/if}}
+  {{#if isCorrect}}
+    {{paper-icon "check"}}
+  {{/if}}
+</div>
