@@ -6,4 +6,10 @@ export default Component.extend({
   isCorrect: computed('response', function () {
     return this.response === get(this, 'answer')
   }),
+
+  actions: {
+    helpButton() {
+      alert(this.answer);
+    }
+  }
 });
